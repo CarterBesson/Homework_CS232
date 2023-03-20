@@ -118,17 +118,16 @@ int main(int argc, char** argv){
  */
 int contains(const struct listNode *pNode, const char *addr){
   // TODO: complete this
-  
-  if(*(pNode->addr) == *addr){
+  //str compare
+  if(strcmp(pNode->addr, addr) == 0){
     return 1;
   }
   else if(pNode->next != NULL){
     return contains(pNode->next, addr);
   }
   else{
-  return 0;
+    return 0;
   }
-  
 }
     
 
@@ -143,7 +142,11 @@ void insertBack(struct listNode *pNode, const char *addr){
   }
   else if (pNode->next == NULL)
   {
-    struct listNode* newNode = {addr,NULL};
+    struct listNode *newNode = NULL;
+    newNode = malloc(sizeof(struct listNode));
+    newNode->next = NULL;
+    // copy addr to newNode->addr
+    strcpy((newNode->addr), addr);
     pNode->next = newNode;
   }
   
@@ -158,7 +161,7 @@ void printAddresses(const struct listNode *pNode){
   // TODO: complete this
   printf("%s \n", pNode->addr);
   if (pNode->next != NULL){
-    printAddresses(pNode);
+    printAddresses(pNode->next);
   }
 }
 
