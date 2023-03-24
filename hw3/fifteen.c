@@ -29,22 +29,25 @@
     #define INT_MAX 12345678
 #endif // INT_MAX
 
-// board
-int board[DIM_MAX][DIM_MAX];
 
-// dimensions
-int d;
 
 // prototypes
 void greet(void);
-void init(void);
-void draw(void);
-short move(int tile);
-short won(void);
+void init(int d, int ** board);
+void draw(int d, int ** board);
+short move(int tile, int d, int ** board);
+short won(int d,int ** board);
 int get_int();
 
 int main(int argc, char* argv[])
 {
+    // board
+    int ** board;
+
+    // dimensions
+    int d;
+    
+
     // ensure proper usage
     if (argc != 2)
     {
@@ -61,6 +64,13 @@ int main(int argc, char* argv[])
         return 2;
     }
 
+    //sets board dimentions
+    board = malloc(sizeof(int*) * d);
+    for (int i = 0; i < d; i++)
+    {
+        board[i] = malloc(sizeof(int) * d);
+    }
+
     // open log
     FILE* file = fopen("log.txt", "w");
     if (file == NULL)
@@ -72,13 +82,13 @@ int main(int argc, char* argv[])
     greet();
 
     // initialize the board
-    init();
+    init(d,board);
 
     // accept moves until game is won
     while (1)
     {
         // draw the current state of the board
-        draw();
+        draw(d, board);
 
         // log the current state of the board (for testing)
         for (int i = 0; i < d; i++)
@@ -96,8 +106,13 @@ int main(int argc, char* argv[])
         fflush(file);
 
         // check for win
-        if (won())
+        if (won(d, board))
         {
+            for(int i = 0; i < d; i++){
+                free(board[i]);
+            }
+            free(board);
+
             printf("ftw!\n");
             break;
         }
@@ -118,7 +133,7 @@ int main(int argc, char* argv[])
         fflush(file);
 
         // move if possible, else report illegality
-        if (!move(tile))
+        if (!move(tile, d, board))
         {
             printf("\nIllegal move.\n");
             usleep(500000);
@@ -179,7 +194,7 @@ void greet(void)
  * Initializes the game's board with tiles numbered 1 through d*d - 1
  * (i.e., fills 2D array with values but does not actually print them).
  */
-void init(void)
+void init(int d, int ** board)
 {
     // TODO
     int i,j;
@@ -196,9 +211,9 @@ void init(void)
         }
             
     }
-    if ((((d * d) - 1) % 2) == 1){
-        board[d][d - 2] = 1;
-        board[d][d - 1] = 2;
+    if ((((d * d) - 1) % 2) != 0){
+        board[d - 1][d - 3] = 1;
+        board[d - 1][d - 2] = 2;
         }
 
 }
@@ -206,7 +221,7 @@ void init(void)
 /**
  * Prints the board in its current state.
  */
-void draw(void)
+void draw(int d, int ** board)
 {
     // TODO
    int i,j;
@@ -229,39 +244,42 @@ void draw(void)
  * If tile borders empty space, moves tile and returns 1, else
  * returns 0.
  */
-short move(int tile)
+short move(int tile, int d, int ** board)
 {
     // TODO
     int i,j;
     for(i = 0; i < d; i++){
-        for (j = 0; i < d; j++)
+        for (j = 0; j < d; j++)
         {
             if(tile == board[i][j]){
                 //check above
-                if(board[i - 1][j] == 0){
+                if((i - 1) >= 0 && board[i - 1][j] == 0){
                     board[i - 1][j] = board[i][j];
                     board[i][j] = 0;
                     return 1;
                 }
                 //check below
-                else if(board[i + 1][j] == 0){
+                else if((i + 1) < d && board[i + 1][j] == 0){
                     board[i + 1][j] = board[i][j];
                     board[i][j] = 0;
                     return 1;
                 }
                 //check left
-                else if(board[i][j - 1] == 0){
+                else if((j - 1) >= 0 && board[i][j - 1] == 0){
                     board[i][j - 1] = board[i][j];
                     board[i][j] = 0;
                     return 1;
                 }
                 //check right
-                else if(board[i][j + 1] == 0){
+                else if((j + 1) < d && board[i][j + 1] == 0){
                     board[i][j + 1] = board[i][j];
                     board[i][j] = 0;
                     return 1;
                 } 
-            }
+                else{
+                    return 0;
+                }
+            } 
         }
         
     }
@@ -272,20 +290,28 @@ short move(int tile)
  * Returns 1 if game is won (i.e., board is in winning configuration),
  * else 0.
  */
-short won(void)
+short won(int d,int ** board)
 {
     // TODO
     int i,j;
     int start = 1;
-    for(i = 0; i < d; i++){
-        for (j = 0; i < d; j++)
-        {
-          if (board[i][j] != start){
-            return 0;
-          }
-          start++;
+
+     if(board[d - 1][d - 1] == 0){
+        for(i = 0; i < d; i++){
+            for (j = 0; j < d; j++)
+            {
+                if(i == (d - 1) && j == (d - 1)){
+                    break;
+                }
+                if (board[i][j] != start){
+                    return 0;
+                }
+                start++;
+                }
         }
-        
+        return 1;
     }
-    return 1;
+    else{
+        return 0;
+    }
 }
