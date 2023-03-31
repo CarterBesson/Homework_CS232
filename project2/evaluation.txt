@@ -1,0 +1,5 @@
+Carter: Was the primary writer of the freeTrieMemory and addWordOccurence function as well as helping to get the other functions to work properly and did a lot of the debugging. Solo time working on project 2 was 4-5 hours. 
+
+Ethan: Was the primary writer of the addWordProcess, indexPage function, removeSpaces function along with helping with the other functions. Ethan also helped with the debugging process.
+
+In addition to the time we spent working on our project by ourselves we also spent 4-5 hours working together as a team pair programming and debugging. This was done over 2 discord meetings and 1 in person work session. Debugging our program was probably the most time consuming single element of the project.
