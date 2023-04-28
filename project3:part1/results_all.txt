@@ -1,0 +1,362 @@
+395a396,444
+> 
+> Enter a web query: Query is "computer science".
+> IDF scores are
+> IDF(computer): 1.7047481
+> IDF(science): 1.7047481
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0741)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0656)
+> 
+> Enter a web query: Query is "science computer".
+> IDF scores are
+> IDF(science): 1.7047481
+> IDF(computer): 1.7047481
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0741)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0656)
+> 
+> Enter a web query: Query is "pfw computer science".
+> IDF scores are
+> IDF(pfw): 1.7047481
+> IDF(computer): 1.7047481
+> IDF(science): 1.7047481
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000024.html (score: 0.1065)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0741)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0656)
+> 
+> Enter a web query: Query is "sports scores".
+> IDF scores are
+> IDF(sports): 0.6061358
+> IDF(scores): 1.2992830
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000002.html (score: 0.3031)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000024.html (score: 0.1894)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0733)
+> 
+> Enter a web query: 
+> Enter a web query: 
+> Enter a web query: 
+> Enter a web query: Query is "link page".
+> IDF scores are
+> IDF(link): 0.2006707
+> IDF(page): 0.0000000
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000011.html (score: 0.0456)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000021.html (score: 0.0452)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0349)
+> 
+> Enter a web query: Exiting the program
+0a1,3
+> Please enter a query containing only lower-case letters.
+> Please enter a query containing only lower-case letters.
+> Please enter a query containing only lower-case letters.
+374a375,410
+> 
+> Enter a web query: Query is "research".
+> IDF scores are
+> IDF(research): 2.3978953
+> Web pages:
+> 
+> Enter a web query: Query is "computer research".
+> IDF scores are
+> IDF(computer): 1.0116009
+> IDF(research): 2.3978953
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000027.html (score: 0.1046)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0440)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000012.html (score: 0.0266)
+> 
+> Enter a web query: 
+> Enter a web query: Query is "pfw science".
+> IDF scores are
+> IDF(pfw): 1.2992830
+> IDF(science): 1.2992830
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000010.html (score: 0.1732)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000018.html (score: 0.0520)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0500)
+> 
+> Enter a web query: Query is "sports highlights links".
+> IDF scores are
+> IDF(sports): 1.0116009
+> IDF(highlights): 2.3978953
+> IDF(links): 2.3978953
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0660)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0389)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000016.html (score: 0.0375)
+> 
+> Enter a web query: Exiting the program
+0a1
+> Please enter a query containing only lower-case letters.
+365a366,437
+> 
+> Enter a web query: Query is "sport".
+> IDF scores are
+> IDF(sport): 0.6931472
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000000.html (score: 0.1066)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000001.html (score: 0.0484)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000015.html (score: 0.0154)
+> 
+> Enter a web query: Query is "sports".
+> IDF scores are
+> IDF(sports): 0.5389965
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000000.html (score: 0.2902)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000002.html (score: 0.2695)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000017.html (score: 0.0591)
+> 
+> Enter a web query: Query is "computer science".
+> IDF scores are
+> IDF(computer): 1.3862944
+> IDF(science): 1.7917595
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0689)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0603)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000028.html (score: 0.0513)
+> 
+> Enter a web query: Query is "science computer".
+> IDF scores are
+> IDF(science): 1.7917595
+> IDF(computer): 1.3862944
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.0689)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000014.html (score: 0.0603)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000028.html (score: 0.0513)
+> 
+> Enter a web query: Query is "pfw with".
+> IDF scores are
+> IDF(pfw): 2.4849066
+> IDF(with): 0.2876821
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000006.html (score: 0.0508)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000017.html (score: 0.0355)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000002.html (score: 0.0320)
+> 
+> Enter a web query: Query is "highlights some".
+> IDF scores are
+> IDF(highlights): 1.0986123
+> IDF(some): 0.5389965
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000028.html (score: 0.1827)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000006.html (score: 0.0963)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000000.html (score: 0.0845)
+> 
+> Enter a web query: Query is "pfw news other science".
+> IDF scores are
+> IDF(pfw): 2.4849066
+> IDF(news): 1.0986123
+> IDF(other): 0.8754687
+> IDF(science): 1.7917595
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000022.html (score: 0.1831)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.1026)
+> 3. https://users.pfw.edu/chenz/testWeb/page_000001.html (score: 0.0866)
+> 
+> Enter a web query: Query is "another".
+> IDF scores are
+> IDF(another): 1.3862944
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000020.html (score: 0.1066)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000015.html (score: 0.0308)
+> 
+> Enter a web query: Exiting the program
+522c522,635
+< Failed to connect to the website.
+\ No newline at end of file
+---
+> https://users.pfw.edu/chenz/testWeb/page_000001.html
+> 	b
+> 	page
+> 	b
+> 	news
+> 	other
+> 	sport
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	sport
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	other
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	link
+> 	to
+> 	page
+> 	b
+> 	other
+> 	sport
+> 	with
+> 	punctuation
+> 
+> Enter a web query: Query is "sport".
+> IDF scores are
+> IDF(sport): 0.6931472
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000007.html (score: 0.0630)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000001.html (score: 0.0484)
+> 
+> Enter a web query: Query is "sports".
+> IDF scores are
+> IDF(sports): 1.0986123
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000007.html (score: 0.1997)
+> 
+> Enter a web query: 
+> Enter a web query: 
+> Enter a web query: 
+> Enter a web query: Query is "pfw computer science".
+> IDF scores are
+> IDF(pfw): 0.6931472
+> IDF(computer): 1.0986123
+> IDF(science): 1.0986123
+> Web pages:
+> 1. https://users.pfw.edu/chenz/ (score: 0.0198)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000003.html (score: 0.0151)
+> 
+> Enter a web query: Query is "pfw science computer".
+> IDF scores are
+> IDF(pfw): 0.6931472
+> IDF(science): 1.0986123
+> IDF(computer): 1.0986123
+> Web pages:
+> 1. https://users.pfw.edu/chenz/ (score: 0.0198)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000003.html (score: 0.0151)
+> 
+> Enter a web query: Query is "pfw with".
+> IDF scores are
+> IDF(pfw): 0.6931472
+> IDF(with): 0.6931472
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000001.html (score: 0.0161)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000003.html (score: 0.0151)
+> 3. https://users.pfw.edu/chenz/ (score: 0.0045)
+> 
+> Enter a web query: Query is "highlights some".
+> IDF scores are
+> IDF(highlights): 1.0986123
+> IDF(some): 1.7917595
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000003.html (score: 0.0239)
+> 
+> Enter a web query: Query is "pfw news other science".
+> IDF scores are
+> IDF(pfw): 0.6931472
+> IDF(news): 1.0986123
+> IDF(other): 1.0986123
+> IDF(science): 1.0986123
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000001.html (score: 0.1022)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000003.html (score: 0.0151)
+> 3. https://users.pfw.edu/chenz/ (score: 0.0102)
+> 
+> Enter a web query: Query is "another".
+> IDF scores are
+> IDF(another): 0.6931472
+> Web pages:
+> 1. https://users.pfw.edu/chenz/testWeb/page_000007.html (score: 0.1890)
+> 2. https://users.pfw.edu/chenz/testWeb/page_000003.html (score: 0.0301)
+> 
+> Enter a web query: Exiting the program
+0a1,3
+> Please enter a query containing only lower-case letters.
+> Please enter a query containing only lower-case letters.
+> Please enter a query containing only lower-case letters.
+4951c4951,5016
+< Failed to connect to the website.
+\ No newline at end of file
+---
+> 
+> Enter a web query: Query is "sport".
+> IDF scores are
+> IDF(sport): 1.6094379
+> Web pages:
+> 
+> Enter a web query: Query is "sports".
+> IDF scores are
+> IDF(sports): 1.6094379
+> Web pages:
+> 
+> Enter a web query: 
+> Enter a web query: 
+> Enter a web query: 
+> Enter a web query: Query is "pfw computer science".
+> IDF scores are
+> IDF(pfw): 0.5108256
+> IDF(computer): 0.2231436
+> IDF(science): 0.2231436
+> Web pages:
+> 1. https://users.pfw.edu/chenz/ (score: 0.0056)
+> 2. https://www.pfw.edu/departments/etcs/about/assembly/awards.html (score: 0.0022)
+> 3. https://users.pfw.edu/chenz/publications.html (score: 0.0006)
+> 
+> Enter a web query: Query is "pfw science computer".
+> IDF scores are
+> IDF(pfw): 0.5108256
+> IDF(science): 0.2231436
+> IDF(computer): 0.2231436
+> Web pages:
+> 1. https://users.pfw.edu/chenz/ (score: 0.0056)
+> 2. https://www.pfw.edu/departments/etcs/about/assembly/awards.html (score: 0.0022)
+> 3. https://users.pfw.edu/chenz/publications.html (score: 0.0006)
+> 
+> Enter a web query: Query is "pfw with".
+> IDF scores are
+> IDF(pfw): 0.5108256
+> IDF(with): 0.5108256
+> Web pages:
+> 1. https://users.pfw.edu/chenz/ (score: 0.0033)
+> 2. https://users.pfw.edu/chenz/publications.html (score: 0.0014)
+> 3. https://www.pfw.edu/departments/etcs/about/assembly/awards.html (score: 0.0011)
+> 
+> Enter a web query: Query is "highlights some".
+> IDF scores are
+> IDF(highlights): 1.6094379
+> IDF(some): 1.6094379
+> Web pages:
+> 
+> Enter a web query: Query is "pfw news other science".
+> IDF scores are
+> IDF(pfw): 0.5108256
+> IDF(news): 0.9162907
+> IDF(other): 0.9162907
+> IDF(science): 0.2231436
+> Web pages:
+> 1. https://users.pfw.edu/chenz/ (score: 0.0037)
+> 2. https://www.pfw.edu/departments/etcs/about/assembly/awards.html (score: 0.0029)
+> 3. https://users.pfw.edu/chenz/publications.html (score: 0.0005)
+> 
+> Enter a web query: Query is "another".
+> IDF scores are
+> IDF(another): 1.6094379
+> Web pages:
+> 
+> Enter a web query: Exiting the program
+0a1,3
+> Please enter a query containing only lower-case letters.
+> Please enter a query containing only lower-case letters.
+> Please enter a query containing only lower-case letters.

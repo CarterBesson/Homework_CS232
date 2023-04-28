@@ -1,0 +1,111 @@
+==882976== Memcheck, a memory error detector
+==882976== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==882976== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==882976== Command: ./webSearch ./webSearchSol/urlFiles/train1.txt 10 10
+==882976== 
+==882976== 
+==882976== HEAP SUMMARY:
+==882976==     in use at exit: 75,352 bytes in 337 blocks
+==882976==   total heap usage: 440 allocs, 103 frees, 3,185,700 bytes allocated
+==882976== 
+==882976== 75,352 (88 direct, 75,264 indirect) bytes in 1 blocks are definitely lost in loss record 39 of 39
+==882976==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==882976==    by 0x401866: main (webSearch.c:22)
+==882976== 
+==882976== LEAK SUMMARY:
+==882976==    definitely lost: 88 bytes in 1 blocks
+==882976==    indirectly lost: 75,264 bytes in 336 blocks
+==882976==      possibly lost: 0 bytes in 0 blocks
+==882976==    still reachable: 0 bytes in 0 blocks
+==882976==         suppressed: 0 bytes in 0 blocks
+==882976== 
+==882976== For lists of detected and suppressed errors, rerun with: -s
+==882976== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==883080== Memcheck, a memory error detector
+==883080== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==883080== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==883080== Command: ./webSearch ./webSearchSol/urlFiles/train2.txt 10 10
+==883080== 
+==883080== 
+==883080== HEAP SUMMARY:
+==883080==     in use at exit: 67,288 bytes in 301 blocks
+==883080==   total heap usage: 398 allocs, 97 frees, 3,168,254 bytes allocated
+==883080== 
+==883080== 67,288 (88 direct, 67,200 indirect) bytes in 1 blocks are definitely lost in loss record 39 of 39
+==883080==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==883080==    by 0x401866: main (webSearch.c:22)
+==883080== 
+==883080== LEAK SUMMARY:
+==883080==    definitely lost: 88 bytes in 1 blocks
+==883080==    indirectly lost: 67,200 bytes in 300 blocks
+==883080==      possibly lost: 0 bytes in 0 blocks
+==883080==    still reachable: 0 bytes in 0 blocks
+==883080==         suppressed: 0 bytes in 0 blocks
+==883080== 
+==883080== For lists of detected and suppressed errors, rerun with: -s
+==883080== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==883171== Memcheck, a memory error detector
+==883171== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==883171== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==883171== Command: ./webSearch ./webSearchSol/urlFiles/test0.txt 100 1427195
+==883171== 
+==883171== 
+==883171== HEAP SUMMARY:
+==883171==     in use at exit: 114,152 bytes in 507 blocks
+==883171==   total heap usage: 641 allocs, 134 frees, 3,566,978 bytes allocated
+==883171== 
+==883171== 114,152 (808 direct, 113,344 indirect) bytes in 1 blocks are definitely lost in loss record 42 of 42
+==883171==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==883171==    by 0x401866: main (webSearch.c:22)
+==883171== 
+==883171== LEAK SUMMARY:
+==883171==    definitely lost: 808 bytes in 1 blocks
+==883171==    indirectly lost: 113,344 bytes in 506 blocks
+==883171==      possibly lost: 0 bytes in 0 blocks
+==883171==    still reachable: 0 bytes in 0 blocks
+==883171==         suppressed: 0 bytes in 0 blocks
+==883171== 
+==883171== For lists of detected and suppressed errors, rerun with: -s
+==883171== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==883312== Memcheck, a memory error detector
+==883312== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==883312== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==883312== Command: ./webSearch ./webSearchSol/urlFiles/test1.txt 100 1427195
+==883312== 
+==883312== 
+==883312== HEAP SUMMARY:
+==883312==     in use at exit: 511,184 bytes in 926 blocks
+==883312==   total heap usage: 958 allocs, 32 frees, 1,451,943 bytes allocated
+==883312== 
+==883312== LEAK SUMMARY:
+==883312==    definitely lost: 0 bytes in 0 blocks
+==883312==    indirectly lost: 0 bytes in 0 blocks
+==883312==      possibly lost: 0 bytes in 0 blocks
+==883312==    still reachable: 511,184 bytes in 926 blocks
+==883312==         suppressed: 0 bytes in 0 blocks
+==883312== Reachable blocks (those to which a pointer was found) are not shown.
+==883312== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==883312== 
+==883312== For lists of detected and suppressed errors, rerun with: -s
+==883312== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==883359== Memcheck, a memory error detector
+==883359== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==883359== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==883359== Command: ./webSearch ./webSearchSol/urlFiles/test2.txt 100 1427195
+==883359== 
+==883359== 
+==883359== HEAP SUMMARY:
+==883359==     in use at exit: 1,460,272 bytes in 5,163 blocks
+==883359==   total heap usage: 5,192 allocs, 29 frees, 2,425,689 bytes allocated
+==883359== 
+==883359== LEAK SUMMARY:
+==883359==    definitely lost: 0 bytes in 0 blocks
+==883359==    indirectly lost: 0 bytes in 0 blocks
+==883359==      possibly lost: 0 bytes in 0 blocks
+==883359==    still reachable: 1,460,272 bytes in 5,163 blocks
+==883359==         suppressed: 0 bytes in 0 blocks
+==883359== Reachable blocks (those to which a pointer was found) are not shown.
+==883359== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==883359== 
+==883359== For lists of detected and suppressed errors, rerun with: -s
+==883359== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
